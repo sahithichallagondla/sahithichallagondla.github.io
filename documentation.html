@@ -5,10 +5,10 @@
 </head>
 <body>
 
-<h1>Recreation of Dr.John Snow's Cholera Map</h1>
-<a style="color:blue;font-size:20;margin-right:20px;" href="streets_main_v2.html" target="_self">Visualization</a>
+<h1>Recreation of Dr.John Snow's Cholera Map </h1>
+<a style="color:blue;font-size:20;margin-right:20px;" href="streets_main_v2.html" target="_self">Bact to Visualization</a>
 <h3>Introduction:</h3>
-<p>John Snow has created a map depicting the deaths in London due to Cholera outbreak in 1854.</p>
+<p>John Snow has created a map depicting the deaths in London due to Cholera outbreak in 1854.It explained the cause of epidemic in London in 1854.I'm recreating the cholera map using javascriot and D3</p>
 <h3>Methodology:</h3>
 <p>Started with understanding the data and how the data can be represented using the available charts and which suits the best to visualize the data to get an overview of the information provided in the data.
 <br>After going through the data thoroughly, decided on what to use to represent them.</p>
@@ -16,7 +16,7 @@
 <img src="rough.jpg" alt="rough" style="width:500px;height:400px;">
 <h3>Components:</h3>
 <p><b>Map:</b>A map using the coordinates data from streets.json has been constructed, which shows the streets of the city London. Then, the pumps and deaths occurred there have been added to the streets map.</p>
-<p><b>Line Chart:</b>A line chart showing the deaths occurred on each date between 19-August and 29-September has been plotted using the data in the deathdays.csv file. Line chart was used because it best suits for the representation of time series data and the data in deathdays.csv is in chronological order.</p>
+<p><b>Scatter plot:</b>A scatter plot showing the deaths occurred on each date between 19-August and 29-September has been plotted using the data in the deathdays.csv file. Scatter plot was used because it best suits for the representation of time series data and the data in deathdays.csv is in chronological order.</p>
 <p><b>Bar chart:</b>To understand the deaths occurred according to gender, with the data in deaths_age_sex.csv file, I chose Bar chart to depict the data as I want to compare deaths occurred in each gender.</p>
 <p><b>Pie chart:</b>There are different age group people dead during the cholera epidemic and to understand the death distribution I used the pie chart using the data from deaths_age_sex.csv file.</p>
 <p>In addition, I have added street names and workhouse, brewery by observing the original map and placed them relatively in the streets map.</p>
@@ -31,16 +31,19 @@
 <p>To make the visualization interactive I have added the following to the visualization:</p>
 <ul>
   <li>Allowing users to filter the deaths by age or gender using radio buttons.</li>
-  <li>When hovering over the points in the map and line chart, user can see the age and gender of death point, number of deaths on that date respectively.</li>
-  <li>Map and line chart are correlated in a way that when hovering over a point on line chart, total deaths occurred till that date are highlighted in the streets map.</li>
+  <li>When hovering over the points in the map and scatter plot, user can see the age and gender of death point, number of deaths on that date respectively.</li>
+  <li>Map and scatter plot are correlated in a way that when hovering over a point on scatter plot, total deaths occurred till that date are highlighted in the streets map.</li>
 <li>Zoom functionality has been provided, using which the street map can be zoomed in and out.</li>
 <li>I have also provided clustering of the data in a way that when a death point on street map is clicked, all the deaths within a radius of 2 from that point are highlighted.</li>
 </ul>
 <h3>Observations:</h3>
 <p>Visualization has been helpful in understanding the data more and to get insights, which would have been very difficult by just looking at the raw data provided. I could make the following observations from the visualization:</p>
 <ul><li>In a span of 42 days from 19-Aug to 29-Sep, the deaths were pretty low initially and reached a peak in the middle of the month and then there was a gradual drop in the deaths.</li></ul>
+<img src="line.png" alt="line" style="width:500px;height:400px;">
 <ul><li>There are more deaths of female people than male.</li></ul>
+<img src="bar.png" alt="bar" style="width:500px;height:400px;">
 <ul><li>Kids between age 0 and 10, people who are older than 80 years have died mostly due to the epidemic.</li></ul>
+<img src="pie.png" alt="pie" style="width:500px;height:400px;">
 <h3>References:</h3>
 </body>
 </html>
